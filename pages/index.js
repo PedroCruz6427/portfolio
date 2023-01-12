@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,109 +15,202 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
+        {/* ==================================================
+                                    NAV
+            ==================================================  */}
+        <section className={styles.nav}>
+          <div className={styles.navSvgContainer}>
+            <img
+              className={styles.navSvg}
+              src="manbypc.svg"
+              alt="team img"
+            ></img>
+            <div>IE</div>
+            <div>DESIGNS</div>
+          </div>
+          <div>CONTACT</div>
+        </section>
+        {/* ==================================================
+                                    HERO
+            ==================================================  */}
+        <section className={styles.hero}>
+          <div className={styles.heroBox}>
+            <h1>MODERN FULLSTACK WEB DEVELOPMENT</h1>
+            <p>Responsive websites, latest technologies, all devices.</p>
+            <button className={styles.heroButton}>Lets Work Together</button>
+            <div className={styles.svgContainer}>
+              <img className={styles.pcSvg} src="undraw1.svg" alt="icon"></img>
+            </div>
+          </div>
+        </section>
+        {/* ==================================================
+                                    INTRO
+            ==================================================  */}
+        <section className={styles.intro}>
+          <div className={styles.introFirstBox}>
+            <h2>MODERN DESIGN</h2>
+            <div className={styles.firstBoxSvgs}>
+              <div className={styles.responsiveSvgContainer}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="react.svg"
+                  alt="icon"
+                ></img>
+              </div>
+              <div className={styles.responsiveSvgContainer}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="nextJs.svg"
+                  alt="icon"
+                ></img>
+              </div>
+            </div>
+            <p>
+              Full Stack Web development and design using the latest
+              technologies such as NextJS and React.
+            </p>
+          </div>
+          <div className={styles.introSecondBox}>
+            <div className={styles.infoBox}>
+              <h3>Fully Responsive</h3>
+              <div className={styles.responsiveSvgContainer}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="responsive.svg"
+                  alt="icon"
+                ></img>
+              </div>
+              <p>
+                Websites that look great on all your favorite devices, whether
+                its a phone, pc, or tablet.
+              </p>
+            </div>
+            <div className={styles.infoBox}>
+              <h3>Full Stack</h3>
+              <div className={styles.responsiveSvgContainer}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="fullStack.svg"
+                  alt="icon"
+                ></img>
+              </div>
+              <p>Front End and Back end code.</p>
+            </div>
+            <div className={styles.infoBox}>
+              <h3>Future Web Development in Mind</h3>
+              <div className={styles.responsiveSvgContainer}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="team.svg"
+                  alt="icon"
+                ></img>
+              </div>
+              <p>Modern and future trends in mind using React and NextJS.</p>
+            </div>
+          </div>
+        </section>
+        {/* ==================================================
+                                    PORTFOLIO
+            ==================================================  */}
+        <section className={styles.portfolio}>
+          <h2>My Portfolio</h2>
+          <div className={styles.responsiveSvgContainer}>
+            <img
+              className={styles.responsiveSvg}
+              src="portfolio.svg"
+              alt="icon"
+            ></img>
+          </div>
+          <div className={styles.portfolioBox1}>
+            <div className={styles.portfolioPng1Container}>
+              <img
+                className={styles.portfolioPng1}
+                src="watchportfolio.png"
+                alt="icon"
+              ></img>
+            </div>
+            <h3>Augustus Revinci</h3>
+            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.portfolioWebsiteInfo}>
+              Augustus Revinci is a watch retail website. The purpose of this
+              project was to display a knowledge of
+            </p>
+            <button className={styles.visitButton}>Visit</button>
+          </div>
+          <div className={styles.portfolioBoxOthersContainer}>
+            <div className={styles.portfolioBoxOthers}>
+              <div className={styles.portfolioPng1Container}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="wscbull.png"
+                  alt="icon"
+                ></img>
+              </div>
+              <h3>WallStreetChan</h3>
+              <p>Fullstack, API,ServerSide Fetching, MongoDB</p>
+              <p className={styles.portfolioWebsiteInfo}>
+                WallStreetChan is an investment website where users can share
+                opinions and info anonymously thus avoiding the downsides of
+                echo chambers created by upvote and like systems, so everyones
+                opinion is equally considered and unbiased.
+              </p>
+              <button className={styles.visitButton}>Visit</button>
+            </div>
+            <div className={styles.portfolioBoxOthers}>
+              <div className={styles.portfolioPng1Container}>
+                <img
+                  className={styles.responsiveSvg}
+                  src="esmeraladscake.png"
+                  alt="icon"
+                ></img>
+              </div>
+              <h3>Esmeraldas</h3>
+              <p>HTML, CSS, Javascript, React, Next JS</p>
+              <p className={styles.portfolioWebsiteInfo}>
+                Esmerladas is an only cakeshop where clients can order from a
+                wide selection of cakes.
+              </p>
+              <button className={styles.visitButton}>Visit</button>
+            </div>
+          </div>
+        </section>
+        {/* ==================================================
+                                    MY INFO
+            ==================================================  */}
+        <section className={styles.myInfo}>
+          <h2>WHO I AM</h2>
+          <div>icon</div>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
+            Hello, my name is Pedro. This year I am trying to make a career
+            change into web development after years in customer service. Ever
+            since high school its been my dream to work with software and I
+            finally decided to chase my dream and make it a reality. I thrive in
+            team enviroments and would love to become part of yours.
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+          <div>IMAGE OF ME</div>
+          <h4>Pedro C.</h4>
+          <h4>Web Developer</h4>
+        </section>
       </main>
+
+      {/* ==================================================
+                                    FOOTER
+            ==================================================  */}
+
+      <footer className={styles.footer}>
+        <div className={styles.footerInfoContainer}>
+          <div className={styles.navSvgContainer}>
+            <img
+              className={styles.navSvg}
+              src="manbypc.svg"
+              alt="team img"
+            ></img>
+          </div>
+          <p>myemail@outlook.com</p>
+          <p>909-bla-blah</p>
+          <p>Github:</p>
+        </div>
+      </footer>
     </>
-  )
+  );
 }
