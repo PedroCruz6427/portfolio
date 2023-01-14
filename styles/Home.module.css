@@ -3,6 +3,7 @@
 ==================================== */
 
 /* background-color: #2a52be; */
+/* background-color: #0066ff; */
 
 /* ====================================
               END OF NOTES
@@ -30,7 +31,8 @@
 }
 
 .navSvgContainer {
-  height: 6rem;
+  display: flex;
+  height: 4rem;
   z-index: 1;
 }
 
@@ -38,7 +40,16 @@
   height: 100%;
   width: 100%;
 }
-
+.ieDesignsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  margin-top: 1.5rem;
+}
+.ieDesignsContainer div {
+  font-size: 1rem;
+  font-weight: 600;
+}
 /* ====================================
               HERO
 ==================================== */
@@ -66,7 +77,7 @@
 }
 
 .heroBox h1 {
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 3rem;
 }
 
@@ -128,7 +139,7 @@
 ==================================== */
 
 .intro {
-  height: 105vh;
+  height: 145vh;
   width: 100%;
   border: solid rgb(34, 223, 104) 4px;
   text-align: center;
@@ -140,15 +151,19 @@
 }
 
 .introFirstBox {
-  height: 15rem;
-  width: 100%;
-  /* background-color: #ffffff; */
+  height: 24rem;
+  width: 90%;
+  background-color: #3e77f3;
   margin: 6rem;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 .introFirstBox h2 {
+  margin-top: 1rem;
   font-size: 2.25rem;
   letter-spacing: 2px;
-  color: #576bdd;
+  color: #fefefe;
+  font-style: italic;
 }
 
 .firstBoxSvgs {
@@ -166,9 +181,14 @@
   font-size: 1.25rem;
   margin: 3rem;
   line-height: 1.5rem;
+  color: #fefefe;
 }
 .responsiveSvgContainer {
+  margin: 0.5rem;
   height: 4rem;
+}
+.responsiveSvgContainer img {
+  margin: auto;
 }
 .responsiveSvg {
   height: 100%;
@@ -185,34 +205,57 @@
   margin-top: 4rem;
   /* background-color: red; */
 }
+.infoBox h3 {
+  font-size: 1.5rem;
+}
+.infoBox p {
+  margin: 1rem 1rem;
+}
 /* ====================================
               PORTFOLIO
 ==================================== */
 
 .portfolio {
-  height: 60rem;
+  height: 80rem;
   width: 100%;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   text-align: center;
   border: solid black 2px;
   margin: 2rem;
 }
+
+.myPortfolioH2 {
+  font-size: 1.75rem;
+  margin: 2rem;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
 .portfolioBox1 {
   margin: 2rem auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 33vh;
   width: 90%;
-  background-color: rgb(174, 228, 237);
+  background-color: #3e77f3;
   border-radius: 2rem;
+  color: #fefefe;
 }
 
 .portfolioBox1 h3 {
+  color: #222222;
   font-size: 2rem;
   font-style: italic;
   letter-spacing: 1px;
 }
+
+.portfolioBox1 p {
+  color: #fefefe;
+}
+
 .portfolioBoxOthersContainer {
   margin: 2rem auto;
   display: flex;
@@ -221,7 +264,7 @@
   /* background-color: rgb(159, 196, 243); */
   border: solid 2px rgb(217, 69, 35);
 }
-
+/* 
 .portfolioBoxOthers {
   margin: auto 1rem;
   display: flex;
@@ -238,7 +281,7 @@
   font-size: 2rem;
   font-style: italic;
   letter-spacing: 1px;
-}
+} */
 
 .portfolioPng1Container {
   margin: 0 auto;

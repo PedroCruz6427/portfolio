@@ -25,8 +25,10 @@ export default function Home() {
               src="manbypc.svg"
               alt="team img"
             ></img>
-            <div>IE</div>
-            <div>DESIGNS</div>
+            <div className={styles.ieDesignsContainer}>
+              <div>IE</div>
+              <div>WEBDEVS</div>
+            </div>
           </div>
           <div>CONTACT</div>
         </section>
@@ -113,7 +115,7 @@ export default function Home() {
                                     PORTFOLIO
             ==================================================  */}
         <section className={styles.portfolio}>
-          <h2>My Portfolio</h2>
+          <h2 className={styles.myPortfolioH2}>PROJECTS</h2>
           <div className={styles.responsiveSvgContainer}>
             <img
               className={styles.responsiveSvg}
@@ -137,7 +139,43 @@ export default function Home() {
             </p>
             <button className={styles.visitButton}>Visit</button>
           </div>
-          <div className={styles.portfolioBoxOthersContainer}>
+          <div className={styles.portfolioBox1}>
+            <div className={styles.portfolioPng1Container}>
+              <img
+                className={styles.portfolioPng1}
+                src="wscbull.png"
+                alt="icon"
+              ></img>
+            </div>
+            <h3>WallStreetChan</h3>
+            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.portfolioWebsiteInfo}>
+              Augustus Revinci is a watch retail website. The purpose of this
+              project was to display a knowledge of
+            </p>
+            <button className={styles.visitButton}>Visit</button>
+          </div>
+          <div className={styles.portfolioBox1}>
+            <div className={styles.portfolioPng1Container}>
+              <img
+                className={styles.portfolioPng1}
+                src="esmeraladscake.png"
+                alt="icon"
+              ></img>
+            </div>
+            <h3>Esmeraldas</h3>
+            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.portfolioWebsiteInfo}>
+              Augustus Revinci is a watch retail website. The purpose of this
+              project was to display a knowledge of
+            </p>
+            <button className={styles.visitButton}>Visit</button>
+          </div>
+
+          {/* =======================
+              test
+          ================= */}
+          {/* <div className={styles.portfolioBoxOthersContainer}>
             <div className={styles.portfolioBoxOthers}>
               <div className={styles.portfolioPng1Container}>
                 <img
@@ -172,7 +210,7 @@ export default function Home() {
               </p>
               <button className={styles.visitButton}>Visit</button>
             </div>
-          </div>
+          </div> */}
         </section>
         {/* ==================================================
                                     MY INFO
