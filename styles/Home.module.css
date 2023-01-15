@@ -6,6 +6,9 @@
 /* background-color: #0066ff; */
 /* text color: rgb(42, 42, 42); */
 /* babyblue:  #a5ddf6; */
+/* like this color too    rgb(193, 247, 252); */
+/* cool cyan color #57c7fb; */
+
 /* ====================================
               END OF NOTES
 ==================================== */
@@ -197,11 +200,19 @@
   height: 100%;
 }
 
+/* ====================================
+              DESIGN INFO
+==================================== */
+
 .introSecondBox {
-  height: 40rem;
-  width: 100%;
-  /* background-color: rgb(173, 45, 185); */
-  /* border: 5px solid #0066ff; */
+  margin-top: 2rem;
+  height: 44rem;
+  width: 85%;
+  background-color: rgb(163, 196, 246);
+  border-radius: 2rem;
+  padding-bottom: 3px;
+  /* box-shadow: 0 0 25px 15px rgb(0 0 0 / 10%);
+  border: 1px solid transparent; */
 }
 
 .infoBox {
@@ -237,6 +248,8 @@
   letter-spacing: 1.5px;
   font-weight: 600;
   color: #424242;
+  border: 95%;
+  border-bottom: 2px solid #424242;
 }
 
 .portfolioBox1 {
@@ -301,13 +314,13 @@
 .myInfo {
   height: 40rem;
   width: 80%;
-  background-color: #57c7fb;
+  background-color: #1ab0f6;
   text-align: center;
   border-radius: 2rem;
   margin-bottom: 8rem;
   color: rgb(42, 42, 42);
-  box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
-  border: 1px solid transparent;
+  /* box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
+  border: 1px solid transparent; */
 }
 .myInfo h2 {
   font-size: 1.75rem;
@@ -319,6 +332,7 @@
 
 .myInfoText {
   margin: 2rem;
+  font-weight: 700;
 }
 
 .myInfo h4 {
