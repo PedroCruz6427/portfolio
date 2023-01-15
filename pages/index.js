@@ -114,15 +114,24 @@ export default function Home() {
         {/* ==================================================
                                     PORTFOLIO
             ==================================================  */}
+
+        <h2 className={styles.myPortfolioH2}>PROJECTS</h2>
+        <div className={styles.responsiveSvgContainer}>
+          <img
+            className={styles.responsiveSvg}
+            src="portfolio.svg"
+            alt="icon"
+          ></img>
+        </div>
         <section className={styles.portfolio}>
-          <h2 className={styles.myPortfolioH2}>PROJECTS</h2>
+          {/* <h2 className={styles.myPortfolioH2}>PROJECTS</h2>
           <div className={styles.responsiveSvgContainer}>
             <img
               className={styles.responsiveSvg}
               src="portfolio.svg"
               alt="icon"
             ></img>
-          </div>
+          </div> */}
           <div className={styles.portfolioBox1}>
             <div className={styles.portfolioPng1Container}>
               <img
@@ -132,7 +141,9 @@ export default function Home() {
               ></img>
             </div>
             <h3>Augustus Revinci</h3>
-            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.subHead}>
+              HTML, CSS, Javascript, React, Next JS
+            </p>
             <p className={styles.portfolioWebsiteInfo}>
               Augustus Revinci is a watch retail website. The purpose of this
               project was to display a knowledge of
@@ -148,10 +159,14 @@ export default function Home() {
               ></img>
             </div>
             <h3>WallStreetChan</h3>
-            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.subHead}>
+              Fullstack, API, ServerSide Fetching, MongoDB
+            </p>
             <p className={styles.portfolioWebsiteInfo}>
-              Augustus Revinci is a watch retail website. The purpose of this
-              project was to display a knowledge of
+              WallStreetChan is an investment website where users can share
+              opinions and info anonymously thus avoiding the downsides of echo
+              chambers created by upvote and like systems, so everyones opinion
+              is equally considered and unbiased.
             </p>
             <button className={styles.visitButton}>Visit</button>
           </div>
@@ -164,68 +179,42 @@ export default function Home() {
               ></img>
             </div>
             <h3>Esmeraldas</h3>
-            <p>HTML, CSS, Javascript, React, Next JS</p>
+            <p className={styles.subHead}>
+              HTML, CSS, Javascript, React, Next JS
+            </p>
             <p className={styles.portfolioWebsiteInfo}>
               Augustus Revinci is a watch retail website. The purpose of this
               project was to display a knowledge of
             </p>
             <button className={styles.visitButton}>Visit</button>
           </div>
-
-          {/* =======================
-              test
-          ================= */}
-          {/* <div className={styles.portfolioBoxOthersContainer}>
-            <div className={styles.portfolioBoxOthers}>
-              <div className={styles.portfolioPng1Container}>
-                <img
-                  className={styles.responsiveSvg}
-                  src="wscbull.png"
-                  alt="icon"
-                ></img>
-              </div>
-              <h3>WallStreetChan</h3>
-              <p>Fullstack, API,ServerSide Fetching, MongoDB</p>
-              <p className={styles.portfolioWebsiteInfo}>
-                WallStreetChan is an investment website where users can share
-                opinions and info anonymously thus avoiding the downsides of
-                echo chambers created by upvote and like systems, so everyones
-                opinion is equally considered and unbiased.
-              </p>
-              <button className={styles.visitButton}>Visit</button>
-            </div>
-            <div className={styles.portfolioBoxOthers}>
-              <div className={styles.portfolioPng1Container}>
-                <img
-                  className={styles.responsiveSvg}
-                  src="esmeraladscake.png"
-                  alt="icon"
-                ></img>
-              </div>
-              <h3>Esmeraldas</h3>
-              <p>HTML, CSS, Javascript, React, Next JS</p>
-              <p className={styles.portfolioWebsiteInfo}>
-                Esmerladas is an only cakeshop where clients can order from a
-                wide selection of cakes.
-              </p>
-              <button className={styles.visitButton}>Visit</button>
-            </div>
-          </div> */}
         </section>
         {/* ==================================================
                                     MY INFO
             ==================================================  */}
         <section className={styles.myInfo}>
           <h2>WHO I AM</h2>
-          <div>icon</div>
-          <p>
+          <div className={styles.responsiveSvgContainer}>
+            <img
+              className={styles.responsiveSvg}
+              src="hello.svg"
+              alt="icon"
+            ></img>
+          </div>
+          <div className={styles.portfolioPng1Container}>
+            <img
+              className={styles.portfolioPng1}
+              src="wscbull.png"
+              alt="icon"
+            ></img>
+          </div>
+          <p className={styles.myInfoText}>
             Hello, my name is Pedro. This year I am trying to make a career
             change into web development after years in customer service. Ever
             since high school its been my dream to work with software and I
             finally decided to chase my dream and make it a reality. I thrive in
             team enviroments and would love to become part of yours.
           </p>
-          <div>IMAGE OF ME</div>
           <h4>Pedro C.</h4>
           <h4>Web Developer</h4>
         </section>
@@ -237,16 +226,20 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footerInfoContainer}>
-          <div className={styles.navSvgContainer}>
+          <div className={styles.footerLogo}>
             <img
-              className={styles.navSvg}
+              className={styles.footerSvg}
               src="manbypc.svg"
               alt="team img"
             ></img>
+            <div className={styles.ieDesignsContainer}>
+              <div>IE</div>
+              <div>WEBDEVS</div>
+            </div>
           </div>
-          <p>myemail@outlook.com</p>
-          <p>909-bla-blah</p>
-          <p>Github:</p>
+          <p>pedrocruz6427@outlook.com</p>
+          <p>909-201-3099</p>
+          <p>Github: https://github.com/PedroCruz6427</p>
         </div>
       </footer>
     </>

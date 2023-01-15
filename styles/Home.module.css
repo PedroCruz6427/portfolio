@@ -4,7 +4,8 @@
 
 /* background-color: #2a52be; */
 /* background-color: #0066ff; */
-
+/* text color: rgb(42, 42, 42); */
+/* babyblue:  #a5ddf6; */
 /* ====================================
               END OF NOTES
 ==================================== */
@@ -139,9 +140,9 @@
 ==================================== */
 
 .intro {
-  height: 145vh;
+  height: 120vh;
   width: 100%;
-  border: solid rgb(34, 223, 104) 4px;
+  /* border: solid rgb(34, 223, 104) 4px; */
   text-align: center;
   /* background-color: aquamarine; */
   display: flex;
@@ -154,9 +155,11 @@
   height: 24rem;
   width: 90%;
   background-color: #3e77f3;
-  margin: 6rem;
+  margin-bottom: 3rem;
   padding: 1rem;
   border-radius: 2rem;
+  box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
+  border: 1px solid transparent;
 }
 .introFirstBox h2 {
   margin-top: 1rem;
@@ -198,7 +201,7 @@
   height: 40rem;
   width: 100%;
   /* background-color: rgb(173, 45, 185); */
-  border: 5px solid #0066ff;
+  /* border: 5px solid #0066ff; */
 }
 
 .infoBox {
@@ -216,12 +219,15 @@
 ==================================== */
 
 .portfolio {
-  height: 80rem;
-  width: 100%;
-  /* background-color: blanchedalmond; */
+  height: 100rem;
+  width: 95%;
+  /* background-color: rgb(186, 241, 243); */
   text-align: center;
-  border: solid black 2px;
   margin: 2rem;
+  border-radius: 2rem;
+  color: rgb(42, 42, 42);
+  /* box-shadow: 0 0 25px 15px rgb(0 0 0 / 10%);
+  border: 1px solid transparent; */
 }
 
 .myPortfolioH2 {
@@ -230,81 +236,62 @@
   font-style: italic;
   letter-spacing: 1.5px;
   font-weight: 600;
+  color: #424242;
 }
 
 .portfolioBox1 {
-  margin: 2rem auto;
+  margin: 3.5rem auto;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 33vh;
-  width: 90%;
-  background-color: #3e77f3;
-  border-radius: 2rem;
-  color: #fefefe;
-}
-
-.portfolioBox1 h3 {
-  color: #222222;
-  font-size: 2rem;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-
-.portfolioBox1 p {
-  color: #fefefe;
-}
-
-.portfolioBoxOthersContainer {
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* background-color: rgb(159, 196, 243); */
-  border: solid 2px rgb(217, 69, 35);
-}
-/* 
-.portfolioBoxOthers {
-  margin: auto 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40vh;
   width: 90%;
-  background-color: rgb(174, 228, 237);
-  border: solid 2px rgb(192, 255, 240);
+  background-color: #a5ddf6;
   border-radius: 2rem;
+  border: 2px solid #3e77f3;
+  box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
+  border: 1px solid transparent;
 }
-
-.portfolioBoxOthers h3 {
-  font-size: 2rem;
-  font-style: italic;
-  letter-spacing: 1px;
-} */
-
 .portfolioPng1Container {
-  margin: 0 auto;
-  height: 16rem;
-  width: 16rem;
-  border-radius: 10rem;
+  height: 13rem;
+  width: auto;
   overflow: hidden;
 }
 
 .portfolioPng1 {
   height: 100%;
+  border-radius: 2rem;
 }
+.portfolioBox1 h3 {
+  /* background-color: #ffffff; */
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+.subHead {
+  /* background-color: #ffffff; */
+  font-style: italic;
+}
+
 .portfolioWebsiteInfo {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-style: italic;
+  /* background-color: #ffffff; */
 }
 
 .visitButton {
-  margin: 0 auto;
+  margin: 0.5rem auto;
+  height: 2.5rem;
   width: 5rem;
   border-radius: 1rem;
-  color: white;
+  color: #ffffff;
   background-color: #0066ff;
   cursor: pointer;
+  font-weight: 700;
 }
 
 /* ====================================
@@ -312,11 +299,29 @@
 ==================================== */
 
 .myInfo {
-  height: 50rem;
-  width: 100%;
-  background-color: rgb(217, 172, 236);
+  height: 40rem;
+  width: 80%;
+  background-color: #57c7fb;
   text-align: center;
-  border: solid black 2px;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  color: rgb(42, 42, 42);
+  box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
+  border: 1px solid transparent;
+}
+.myInfo h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.myInfoText {
+  margin: 2rem;
+}
+
+.myInfo h4 {
 }
 
 /* ===========================
@@ -327,14 +332,29 @@
 
 .footer {
   margin: 0 auto;
-  height: 30vh;
+  padding-top: 1rem;
+  height: 20vh;
   width: 100%;
-  background-color: blanchedalmond;
+  background-color: #3e77f3;
   text-align: center;
+  color: rgb(255, 255, 255);
+}
+.footerLogo {
+  display: flex;
+  margin: 0 auto;
+  height: 4rem;
+  width: 10rem;
+  z-index: 1;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.footerSvg {
+  height: 100%;
+  width: 100%;
 }
 
 /* ===========================
 
             media queries
 
-=========================== */
+=========================== */ ;
