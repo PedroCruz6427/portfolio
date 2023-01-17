@@ -314,7 +314,7 @@
 .myInfo {
   height: 40rem;
   width: 80%;
-  background-color: #1ab0f6;
+  background-color: rgb(163, 196, 246);
   text-align: center;
   border-radius: 2rem;
   margin-bottom: 8rem;
@@ -369,6 +369,75 @@
 
 /* ===========================
 
-            media queries
+            media queries 384px max
 
-=========================== */ ;
+=========================== */
+
+@media (max-width: 24rem) {
+  .hero {
+    height: 58rem;
+  }
+  .heroBox h1 {
+    font-size: 2rem;
+  }
+  .svgContainer {
+    height: 25rem;
+    width: 20rem;
+  }
+
+  .intro {
+    height: 200vh;
+  }
+  .introFirstBox {
+    height: 68vh;
+  }
+  .infoBox h3 {
+    padding: 0 2rem;
+  }
+  .portfolio {
+  }
+  .portfolioBox1 {
+    height: 70vh;
+  }
+  .myInfo {
+    height: 105vh;
+  }
+}
+
+/* ===========================
+
+            media queries 600px max
+
+=========================== */
+
+@media (max-width: 37.5rem) {
+  .hero {
+    height: 58rem;
+  }
+  .heroBox h1 {
+    font-size: 2rem;
+  }
+  .svgContainer {
+    height: 25rem;
+    width: 20rem;
+  }
+
+  .intro {
+    height: 180vh;
+  }
+  .introFirstBox {
+    height: 68vh;
+  }
+  .infoBox h3 {
+    padding: 0 2rem;
+  }
+  .portfolio {
+    height: 240vh;
+  }
+  .portfolioBox1 {
+    height: 70vh;
+  }
+  .myInfo {
+    height: 105vh;
+  }
+}
