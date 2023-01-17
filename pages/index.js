@@ -164,9 +164,7 @@ export default function Home() {
             </p>
             <p className={styles.portfolioWebsiteInfo}>
               WallStreetChan is an investment website where users can share
-              opinions and info anonymously thus avoiding the downsides of echo
-              chambers created by upvote and like systems, so everyones opinion
-              is equally considered and unbiased.
+              opinions and info anonymously.
             </p>
             <button className={styles.visitButton}>Visit</button>
           </div>
