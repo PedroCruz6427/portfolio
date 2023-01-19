@@ -145,16 +145,11 @@
 .intro {
   height: 120vh;
   width: 100%;
-  /* border: solid rgb(34, 223, 104) 4px; */
   text-align: center;
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url("../public/blobs.svg");
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 .introFirstBox {
@@ -180,6 +175,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2px;
 }
 
 .introFirstBox div {
@@ -200,6 +196,17 @@
   margin: auto;
 }
 .responsiveSvg {
+  height: 100%;
+}
+.responsiveSvgContainer2 {
+  margin: 0.5rem;
+  margin-top: 2rem;
+  height: 4rem;
+}
+.responsiveSvgContainer2 img {
+  margin-top: 0.5rem;
+}
+.responsiveSvg2 {
   height: 100%;
 }
 
@@ -334,6 +341,18 @@
   font-weight: 600;
 }
 
+.infoPngContainer {
+  margin-top: 1.5rem;
+  height: 13rem;
+  width: auto;
+  overflow: hidden;
+}
+
+.infoPng {
+  height: 100%;
+  border-radius: 2rem;
+}
+
 .myInfoText {
   margin: 2rem;
   font-weight: 700;
@@ -388,7 +407,7 @@
 
 @media (max-width: 24rem) {
   .hero {
-    height: 58rem;
+    height: 100vh;
   }
   .heroBox h1 {
     font-size: 2rem;
@@ -402,21 +421,22 @@
     height: 150vh;
   }
   .introFirstBox {
+    margin-top: 20rem;
     height: 68vh;
   }
 
   .introFirstBox p {
     margin-top: 1rem;
   }
+
   .infoBox h3 {
     padding: 0 2rem;
   }
+
   .introFirstBox div {
     margin-top: 1.25rem;
   }
 
-  .portfolio {
-  }
   .myPortfolioH2 {
     margin: 0;
     margin-top: 6rem;
@@ -448,7 +468,8 @@
   }
 
   .intro {
-    height: 150vh;
+    margin-top: 20rem;
+    height: 90vh;
   }
   .introFirstBox {
     height: 24rem;
@@ -460,43 +481,64 @@
     box-shadow: 0 0 25px 15px rgb(0 0 0 / 20%);
     border: 1px solid transparent;
   }
+
   .infoBox h3 {
     padding: 0 2rem;
+  }
+  .introFirstBox h2 {
+    font-size: 2rem;
   }
 
   .introFirstBox p {
     font-size: 1rem;
   }
+
   .portfolio {
-    height: 240vh;
+    height: 145vh;
   }
   .portfolioBox1 {
-    height: 70vh;
+    height: 45vh;
   }
   .myInfo {
-    height: 70vh;
+    margin-top: 10rem;
+    height: 44rem;
+  }
+
+  .introSecondBox {
+    margin-bottom: 20rem;
   }
 }
 
 /* ===========================
 
-            media queries  600px -900px
+            media queries  600px+
 
 =========================== */
 
 @media (min-width: 37.5rem) {
-  /* HERO */
+  /* MAIN */
+  .main {
+    background-image: url("../public/dots.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
+  /* NAV */
+
+  /* HERO */
+  .hero {
+    height: 135vh;
+  }
   .heroBox h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .heroBox p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .svgContainer {
     margin: auto;
-    height: 35rem;
-    width: 35rem;
+    height: 45rem;
+    width: 45rem;
   }
 
   .pcSvg {
@@ -561,25 +603,7 @@
 
   /* ===========================
 
-            media queries  950px+
+            media queries  950px+/59.38rem+
 
 =========================== */
-
-  @media (min-width: 59.37rem) {
-    /* HERO */
-    .hero {
-      height: 125vh;
-    }
-    .heroBox h1 {
-      font-size: 5rem;
-    }
-    .heroBox p {
-      font-size: 1.5rem;
-    }
-    .svgContainer {
-      margin: auto;
-      height: 35rem;
-      width: 35rem;
-    }
-  }
 }

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export default function Home() {
               <div>WEBDEVS</div>
             </div>
           </div>
-          <div>CONTACT</div>
+          {/* <div>CONTACT</div> */}
         </section>
         {/* ==================================================
                                     HERO
@@ -56,14 +57,14 @@ export default function Home() {
                 <img
                   className={styles.responsiveSvg}
                   src="react.svg"
-                  alt="icon"
+                  alt="ReactIcon"
                 ></img>
               </div>
-              <div className={styles.responsiveSvgContainer}>
+              <div className={styles.responsiveSvgContainer2}>
                 <img
-                  className={styles.responsiveSvg}
+                  className={styles.responsiveSvg2}
                   src="nextJs.svg"
-                  alt="icon"
+                  alt="NextIcon"
                 ></img>
               </div>
             </div>
@@ -124,38 +125,32 @@ export default function Home() {
           ></img>
         </div>
         <section className={styles.portfolio}>
-          {/* <h2 className={styles.myPortfolioH2}>PROJECTS</h2>
-          <div className={styles.responsiveSvgContainer}>
-            <img
-              className={styles.responsiveSvg}
-              src="portfolio.svg"
-              alt="icon"
-            ></img>
-          </div> */}
           <div className={styles.portfolioBox1}>
             <div className={styles.portfolioPng1Container}>
               <img
                 className={styles.portfolioPng1}
                 src="watchportfolio.png"
-                alt="icon"
+                alt="Seiko Watch"
               ></img>
             </div>
             <h3>Augustus Revinci</h3>
             <p className={styles.subHead}>
-              HTML, CSS, Javascript, React, Next JS
+              State Management, Click handlers, Sitewide Context,
             </p>
             <p className={styles.portfolioWebsiteInfo}>
               Augustus Revinci is a watch retail website. The purpose of this
               project was to display a knowledge of
             </p>
-            <button className={styles.visitButton}>Visit</button>
+            <Link href="https://augustus-revinci.vercel.app/">
+              <button className={styles.visitButton}>Visit</button>
+            </Link>
           </div>
           <div className={styles.portfolioBox1}>
             <div className={styles.portfolioPng1Container}>
               <img
                 className={styles.portfolioPng1}
                 src="wscbull.png"
-                alt="icon"
+                alt="grey bull"
               ></img>
             </div>
             <h3>WallStreetChan</h3>
@@ -166,14 +161,16 @@ export default function Home() {
               WallStreetChan is an investment website where users can share
               opinions and info anonymously.
             </p>
-            <button className={styles.visitButton}>Visit</button>
+            <Link href="https://wallstreetchan.vercel.app/">
+              <button className={styles.visitButton}>Visit</button>
+            </Link>
           </div>
           <div className={styles.portfolioBox1}>
             <div className={styles.portfolioPng1Container}>
               <img
                 className={styles.portfolioPng1}
                 src="esmeraladscake.png"
-                alt="icon"
+                alt="Yummy Cake image"
               ></img>
             </div>
             <h3>Esmeraldas</h3>
@@ -181,10 +178,12 @@ export default function Home() {
               HTML, CSS, Javascript, React, Next JS
             </p>
             <p className={styles.portfolioWebsiteInfo}>
-              Augustus Revinci is a watch retail website. The purpose of this
-              project was to display a knowledge of
+              Esmeraldas is a cake sale website. The purpose of this project was
+              to display a knowledge of
             </p>
-            <button className={styles.visitButton}>Visit</button>
+            <Link href="https://esmeraldas-liard.vercel.app/">
+              <button className={styles.visitButton}>Visit</button>
+            </Link>
           </div>
         </section>
         {/* ==================================================
@@ -199,11 +198,11 @@ export default function Home() {
               alt="icon"
             ></img>
           </div>
-          <div className={styles.portfolioPng1Container}>
+          <div className={styles.infoPngContainer}>
             <img
-              className={styles.portfolioPng1}
+              className={styles.infoPng}
               src="wscbull.png"
-              alt="icon"
+              alt="picture of me"
             ></img>
           </div>
           <p className={styles.myInfoText}>
@@ -237,7 +236,7 @@ export default function Home() {
           </div>
           <p>pedrocruz6427@outlook.com</p>
           <p>909-201-3099</p>
-          <p>Github: https://github.com/PedroCruz6427</p>
+          <p>https://github.com/PedroCruz6427</p>
         </div>
       </footer>
     </>
